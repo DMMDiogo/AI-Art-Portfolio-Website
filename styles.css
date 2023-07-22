@@ -1,6 +1,8 @@
 @font-face {
     font-family: Futura;
     src: url(Futura-Medium.woff);
+    font-family: Futura-Light;
+    src: url(FuturaLT-Light.woff);
 }
 
 body {
@@ -14,15 +16,29 @@ body {
 
 .nav {
     background-color: rgb(244, 244, 247);
-    flex: 1;
+    
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav a:hover {
+    color: rgb(0, 168, 229);
 }
 
 .right-links {
     display: flex;
     justify-content: space-between;
-    padding: 16px;
+    padding: 12px;
     margin: 16px 16px 8px 16px;
     background-color: rgb(244, 244, 247);
+    gap: 18px;
+}
+
+.right-links .Art {
+margin-right: auto;
 }
 
 .Hero {
@@ -31,7 +47,7 @@ body {
     background-size: cover;
     align-items: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(29, 29, 29, 0.5)), url("hero.png");
-    height: 80vh;
+    height: 100vh;
     background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -39,6 +55,7 @@ body {
 }
 
 h1 {
+    font-family: "Futura-Light";
     color:rgb(244, 244, 247) ;
     text-align: center;
     font-size: 58px;
@@ -47,12 +64,16 @@ h1 {
 
 button {
     font-family: Futura;
-    font-size: 20px;
-    padding: 8px 10px 8px 10px;
-    border-radius: 6px;
-    align-items: center;
-    border-color: black;
+    font-size: 16px;
+    padding: 10px 18px 10px 18px;
+    border-radius: 40px;
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    cursor: pointer;
 }
+
+
 
 .hero-text {
     display: flex;
@@ -64,5 +85,55 @@ button {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+
+h3 {
+    font-family: "Futura-Light";
+    color: rgb(255, 255, 255);
+    font-size: 54px;
+    align-self: center;
+    text-align: center;
+    margin: 80px auto 80px auto;
+}
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+
+.column {
+   flex: 45%;
+   max-width: 50%;
+   padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+  }
+
+  .column img:hover {
+    transform: scale(1.5);
+    transition-duration: 1.5s;
+  }
+
+
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 100%;
+    }
+ h1 {
+        font-size: 48px;
+    }
+  }
+
+  
 
 
