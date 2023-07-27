@@ -1,13 +1,7 @@
-@font-face {
-    font-family: Futura;
-    src: url(Futura-Medium.woff);
-    font-family: Futura-Light;
-    src: url(FuturaLT-Light.woff);
-    
-}
+
 
 body {
-    font-family: Futura;
+    font-family: 'Orbitron', sans-serif;
     display: flex;
     flex-direction: column;
     background-color: rgb(10, 10, 10);
@@ -27,19 +21,21 @@ body {
 
 .nav a:hover {
     color: rgb(0, 168, 229);
+    font-weight: 500;
 }
 
 .right-links {
     display: flex;
     justify-content: space-between;
     padding: 12px;
-    margin: 16px 16px 8px 16px;
+    margin: 16px 70px 8px 16px;
     background-color: rgb(244, 244, 247);
     gap: 18px;
 }
 
 .right-links .Art {
 margin-right: auto;
+margin-left: 70px;
 }
 
 .Hero {
@@ -56,7 +52,8 @@ margin-right: auto;
 }
 
 h1 {
-    font-family: "Futura-Light";
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
     color:rgb(244, 244, 247) ;
     text-align: center;
     font-size: 58px;
@@ -66,7 +63,7 @@ h1 {
 
 
 button {
-    font-family: Futura;
+    font-family: 'Orbitron', sans-serif;
     font-size: 16px;
     padding: 10px 18px 10px 18px;
     border-radius: 40px;
@@ -98,7 +95,7 @@ button:hover {
 
 
 h3 {
-    font-family: "Futura-Light";
+    font-family: 'Orbitron', sans-serif;
     color: rgb(255, 255, 255);
     font-size: 54px;
     align-self: center;
@@ -108,11 +105,12 @@ h3 {
 
 .art-images {
     margin: 4px;
-    padding: 32px;
+    padding: 16px;
 }
 
 p {
-    font-family: "Futura-Light";
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 400;
     font-size: 18px;
     color: rgb(244, 244, 247);
     text-align: center;
@@ -167,6 +165,8 @@ p {
     justify-content: center;
     gap: 32px;
     margin-top: 50px;
+    margin-left: 16px;
+    margin-right: 16px;
     
 }
 
@@ -176,7 +176,8 @@ p {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    flex: 1 0 400px;
+    flex-grow: 1;
+    width: 400px;
     max-width: 600px;
     min-width: 300px;
     border: 1px;
@@ -190,7 +191,8 @@ p {
 }
 
 .card-title {
-    font-family: "Futura-Light";
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 500;
     color: rgb(255, 255, 255);
     line-height: 60px;
     font-size: 44px;
@@ -200,6 +202,8 @@ p {
 
 .card-text {
     color: rgb(255, 255, 255);
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 300;
 
 }
 
@@ -209,6 +213,66 @@ svg {
     stroke: rgb(255, 255, 255);
     stroke-width: 0.5px;
 }
+
+
+.about {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+
+.about-card {
+    display: flex;
+    padding: 24px;
+    margin: 16px;
+    border: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(255, 255, 255);
+    justify-content: space-between;
+    gap: 32px;
+    width: 70%;
+   min-height: 100%;
+}
+.about-text {
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+    max-width: 45%;
+}
+
+.about-text p {
+    text-align: start;
+    font-weight: 300;
+    font-size: 24px;
+
+}
+
+#first-text-about {
+    color:rgb(255, 255, 255) ;
+    font-weight: 500;
+    font-size: 44px;
+    text-align: start;
+}
+
+.image-nieztche {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.image-nieztche img {
+    border-radius: 30px;
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    height: auto;
+}
+
 
 
 
