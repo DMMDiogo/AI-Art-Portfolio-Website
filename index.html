@@ -113,6 +113,39 @@
         </div>
     </div>
     </div>
+
+    <div class="calculator-section">
+      <h3>Crunch the numbers</h3>
+      <p>A little client-side calculator, because why not?</p>
+      <div class="calculator">
+        <input id="calc-display" type="text" readonly aria-label="Calculator display" value="0">
+        <div class="calc-buttons">
+          <button class="calc-btn calc-fn" onclick="calcClear()">C</button>
+          <button class="calc-btn calc-fn" onclick="calcDelete()">DEL</button>
+          <button class="calc-btn calc-op" onclick="calcAppend('/')">/</button>
+          <button class="calc-btn calc-op" onclick="calcAppend('*')">*</button>
+
+          <button class="calc-btn" onclick="calcAppend('7')">7</button>
+          <button class="calc-btn" onclick="calcAppend('8')">8</button>
+          <button class="calc-btn" onclick="calcAppend('9')">9</button>
+          <button class="calc-btn calc-op" onclick="calcAppend('-')">-</button>
+
+          <button class="calc-btn" onclick="calcAppend('4')">4</button>
+          <button class="calc-btn" onclick="calcAppend('5')">5</button>
+          <button class="calc-btn" onclick="calcAppend('6')">6</button>
+          <button class="calc-btn calc-op" onclick="calcAppend('+')">+</button>
+
+          <button class="calc-btn" onclick="calcAppend('1')">1</button>
+          <button class="calc-btn" onclick="calcAppend('2')">2</button>
+          <button class="calc-btn" onclick="calcAppend('3')">3</button>
+          <button class="calc-btn calc-equals" onclick="calcEvaluate()">=</button>
+
+          <button class="calc-btn calc-zero" onclick="calcAppend('0')">0</button>
+          <button class="calc-btn" onclick="calcAppend('.')">.</button>
+        </div>
+      </div>
+    </div>
+
     <div class="footer">
       <div class="left-footer">
         <h5>Hope you like it!</h5>
@@ -128,8 +161,6 @@
     </div>
 
 
-    
-      
-    
+    <script src="calculator.js"></script>
 </body>
 </html>
