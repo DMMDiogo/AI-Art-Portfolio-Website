@@ -294,6 +294,111 @@ svg {
 }
 
 
+.calculator-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    margin: 0 16px 100px 16px;
+}
+
+.calculator-section h3 {
+    font-size: 44px;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 360px;
+    padding: 24px;
+    margin-top: 24px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background: rgb(10, 10, 10);
+    box-sizing: border-box;
+    transition: box-shadow 0.5s;
+}
+
+.calculator:hover {
+    box-shadow: 12px 12px 20px 12px rgb(191, 14, 114);
+}
+
+#calc-display {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    text-align: right;
+    color: rgb(255, 255, 255);
+    background: rgb(20, 20, 20);
+    border: 1px solid rgb(0, 168, 229);
+    border-radius: 10px;
+    padding: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: auto;
+    outline: none;
+}
+
+.calc-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.calc-btn {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 16px 0;
+    border-radius: 12px;
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+}
+
+.calc-btn:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+.calc-op {
+    border-color: rgb(0, 168, 229);
+    color: rgb(0, 168, 229);
+}
+
+.calc-op:hover {
+    background-color: rgb(0, 168, 229);
+    color: rgb(0, 0, 0);
+}
+
+.calc-fn {
+    border-color: rgb(191, 14, 114);
+    color: rgb(191, 14, 114);
+}
+
+.calc-fn:hover {
+    background-color: rgb(191, 14, 114);
+    color: rgb(255, 255, 255);
+}
+
+.calc-equals {
+    grid-row: span 2;
+    border-color: rgb(191, 14, 114);
+    background-color: rgb(191, 14, 114);
+    color: rgb(255, 255, 255);
+}
+
+.calc-equals:hover {
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    color: rgb(191, 14, 114);
+}
+
+.calc-zero {
+    grid-column: span 2;
+}
+
 .footer {
     background-color: rgb(231, 231, 231);
     height: fit-content;
